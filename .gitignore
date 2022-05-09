@@ -1,0 +1,235 @@
+# INITIAL HTML CODE
+
+<body>
+
+<!-- NAVBAR CODE --> 
+
+<div class="navbar">
+
+    <!-- TWITTER LOGO  (NEEDS TO BE FIXED) -->
+     <div class="logo">
+        <a href="https://twitter.com/home">
+            <img src="./assets/logo-3.png" alt=""> 
+        </a>   
+    </div>
+    
+<!-- NAVIGATION ITEMS -->
+    <div class="navbar-items">
+
+        <span class="navbar-items-content"> 
+            <i class="material-icons">home</i>
+            Home
+        </span>
+
+        <span class="navbar-items-content">
+            <i class="material-icons">tag</i>
+            Explore
+        </span>  
+
+        <span class="navbar-items-content">
+            <i class="material-icons"> notifications</i>
+            Notifications
+        </span>
+
+        <span class="navbar-items-content">
+            <i class="material-icons"> email</i>
+            Messages
+        </span>
+
+        <span class="navbar-items-content">
+            <i class="material-icons"> bookmark</i>
+            Bookmarks
+        </span>
+
+        <span class="navbar-items-content">
+            <i class="material-icons">list_alt</i>
+            Lists
+        </span> 
+
+        <span class="navbar-items-content">
+            <i class="material-icons"> person</i>
+            Profile
+        </span> 
+
+        <span class="navbar-items-content">
+            <i class="material-icons"> pending</i> 
+            More
+        </span>  
+ 
+    </div>  
+</div>
+
+<!-- TWITTER BUTTON -->
+    <div class="twitter-button">
+        <button type="button" class="button">Tweet</button>
+    </div>    
+
+    
+    <!-- PROFILE -->
+    <div class="profile">
+        <span class="profile-image">
+            <img src="./assets/profile-pic.JPG" alt="">
+        </span> 
+
+        <div class="profile-username"> 
+       <span>Luthando</span>
+       <span>@brotherman_lu</span>
+    </div>
+       <p> 
+           <i class="material-icons">more_horiz</i> 
+       </p> 
+    </div> 
+ 
+
+<!-- MAINBODY CODE -->
+
+<div class="mainbody">
+    <div class="home">
+        <span class="home-navbar"> 
+            Home 
+            <i>Star Icon</i>
+        </span>
+        <div class="home-content">
+            <img src="" alt="">
+            <input type="text"placeholder="What's Happening">
+            <span class="home-icons"> 
+                <i>Media</i>
+                <i>GIF</i>
+                <i>Poll</i>
+                <i>Emoji</i>
+                <i>Schedule</i> 
+                <i>Location</i> 
+            </span> 
+            <button type="button" class="home-button" >Tweet</button>
+        </div> 
+ 
+    </div>
+</div> 
+
+
+
+<!-- RIGHT-SIDE-BAR CODE --> 
+
+
+
+</body>
+
+# INITIAL CSS CODE
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px; 
+}  
+ 
+ 
+/* NAVBAR CODE */
+
+/* NAVBAR ITEMS */
+
+.navbar {
+   padding-left: 80px;
+   padding-top: 15px; 
+   width: 235px;
+   justify-content: center; 
+   font-size: 1rem;
+   font-weight: 400;  
+   position: fixed; 
+   height: 100vh; 
+}                
+   
+.navbar > .logo {
+    width: 55px;
+    height:55px; 
+}
+ 
+/* IMAGE LOOKS HORRIBLE, NEEDS TO BE FIXED */
+.navbar > .logo > a > img { 
+    display: flex; 
+    height:25px;
+    width: 25px; 
+}     
+ 
+.navbar > .navbar-items {
+    display: flex; 
+    flex-direction: column; 
+    font-size: 1.5rem;  
+    font-weight: 400; 
+}    
+
+.navbar > .navbar-items > .navbar-items-content {
+    width: 234px;
+    height: 51px;
+    align-items: center; 
+    cursor: pointer;
+}      
+
+.navbar > .navbar-items > .navbar-items-content:hover {
+    background-color: #d0d0d0;
+    border-radius: 25px; 
+}   
+  
+
+
+.navbar > .navbar-items > .navbar-items-content > .material-icons {
+    width: 30px;
+    height: 30px;
+    color: black; 
+    padding-top: 20px;  
+}   
+  
+
+/* NAVBAR TWITTER BUTTON */
+
+.navbar > .twitter-button {
+    padding-top: 30px;
+} 
+.navbar > .twitter-button > .button {
+    justify-content: center; 
+    width: 210px; 
+    height: 50px;  
+    border: none;    
+    border-radius: 25px;  
+    color: rgb(255 255 255);
+    background-color: rgb(24, 159, 248);  
+    padding: 0px 32px;  
+    font-size: 16px;   
+    font-weight: 600; 
+}   
+ 
+/* NAVBAR PROFILE */
+
+.navbar > .profile {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 20px;  
+}      
+
+.navbar > .profile > .profile-image > img {
+    width: 40px;
+    height: 40px; 
+    border-radius: 50%; 
+}  
+
+
+
+
+/* END OF NAVBAR CODE */
+
+
+/* BEGINNING OF MAINBODY CODE */
+
+.mainbody > .home {
+    display: flex; 
+    justify-content: center; 
+}
+  
