@@ -105,6 +105,7 @@ main {
     margin: 5px auto; 
     width: 600px;
     height: 2500px;    
+    cursor: pointer ; 
 }       
   
 main > .home {
@@ -197,7 +198,6 @@ main > .home-icons > button {
     opacity: 0.5;
     font-size: 15px;
     font-size: 700;
-    cursor: pointer; 
 }
 
 main > .show-tweets {
@@ -213,7 +213,6 @@ main > .show-tweets > button {
     color: rgb(29, 155, 240); 
     font-size: 15px; 
     font-weight: 400;
-    cursor: pointer; 
 }
 
  /* END OF HOME TWEETS, ICONS & BUTTON*/
@@ -226,7 +225,6 @@ main > .show-tweets > button {
      padding: 0px 16px; 
      margin: 10px 0px;
      font-size: 15px; 
-     cursor: pointer; 
  }     
 
  main > .home-content > .home-content-profile {
@@ -268,9 +266,115 @@ main > .show-tweets > button {
 
  /* RIGHT-SIDEBAR CODE */
    
+
+ /* SEARCH INPUT */
+.sidebar { 
+    display: flex; 
+    flex-direction: column; 
+    position: absolute;  
+    left: 980px;
+    top: 0px;    
+    width: 350px;   
+    height: 200vh;  
+    margin-left: 50px;  
+}     
+ 
+.sidebar > .search-button {
+    display: flex; 
+    align-items: center; 
+    width: 348px; 
+    height: 42px; 
+    margin-left: 20px; 
+    background-color: rgb(239, 243, 244);
+    border: 1px solid color rgb(29, 155, 240);  
+}   
+
+.sidebar > .search-button > span {
+    width: 10%; 
+    color:rgb(29, 155, 240) ; 
+}
+ 
+.sidebar > .search-button > input {
+    width: 90%;  
+    height: 100%;  
+    border: none;
+}
+
+.sidebar > .search-button > input:focus {
+    outline: none; 
+}
+
+.sidebar > .trending-now {
+    width: 348px;
+    height: 500px; 
+    font-size: 15px; 
+    display: flex;
+    flex-direction: column; 
+    cursor: pointer;
+}
+
+/* TRENDING NOW STORIES */
+
+.sidebar > .trending-now > .trends-for-you {
+    width: 348px;
+    height: 48px; 
+    display: flex; 
+    align-items: center;
+    color: rgb(15, 20, 25);
+    font-size: 15px;   
+    font-weight: 700;
+    
+} 
+
+.sidebar > .trending-now > .trending-stories {
+    width: 316px;
+    height: 58px;
+    padding: 12px 16px; 
+}
+
+.sidebar > .trending-now > .trending-stories {
+    width: 348px;
+    height: 82px; 
+    font-size: 15px; 
+}
+
+.sidebar > .trending-now > .trending-stories > .headlines {
+    width: 280px; 
+    height: 16px; 
+    display: flex;  
+    justify-content: space-between; 
+    font-size: 13px;   
+    color:rgb(83 100 113) ; 
+}
+
+.sidebar > .trending-now > .trending-stories > .main-story {
+    width: 316px;
+    height: 36px; 
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 5px; 
+    font-size: 15px; 
+    color: rgb(15, 20, 25);
+    font-weight: 700;
+}   
+ 
+.sidebar > .trending-now > .trending-stories > .main-story > .sm-font {
+    font-size: 10px; 
+    margin-top: 5px; 
+   color: rgb(83 100 113); 
+}   
+
+
+/* SHOW MORE BUTTON */ 
+.sidebar > .show-more {
+    width: 348px;
+    height: 52px;
+}  
   
 
-   
+
+
+    
 
 
 
