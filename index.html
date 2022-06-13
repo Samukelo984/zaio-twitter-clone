@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,57 +8,62 @@
     href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
      />
 
- 
-    <link rel="stylesheet" href="styles.css"> 
-    <title>Twitter</title> 
+     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  
+    <link rel="stylesheet" href="./navbar.css">  
+    <link rel="stylesheet" href="./maincontent.css">  
+    <link rel="stylesheet" href="./rightsidebar.css">
+    <title>Twitter</title>  
 </head>
 
 <body>
+
     <!-- NAVBAR CODE -->
     <div class="navbar"> 
+
         <!-- TWITTER LOGO -->
         <div class="logo">
             <a href="https://www.rocomamas.com/"> 
-                <img src="./assets/logo.png" alt=""> 
-            </a> 
-        </div> 
-
+                <img src="./assets/logo.png" alt="">   
+            </a>   
+        </div>     
+ 
         <!-- NAVBAR CONTENT -->
-        <div class="navbar-content">
+        <div class="navbar-content"> 
             <div class="navbar-content-items hover"> 
-                <span class="material-symbols-outlined">location_home</span>
-               <span>Home</span> 
+                <span class="material-symbols-outlined">other_houses</span>
+               <span class="nav-text">Home</span> 
             </div>     
 
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">tag</span>
-                Explore  
+                <span class="nav-text">Explore</span>   
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">notifications</span>
-                Notifications 
+                <span class="nav-text">Notifications</span> 
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">mail</span>
-                Messages 
+                <span class="nav-text">Messages</span> 
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">bookmark</span>
-                Bookmarks 
+                <span class="nav-text">Bookmarks</span>  
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">featured_play_list</span>
-                Lists  
+                <span class="nav-text">Lists</span>   
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">person</span>
-                Profile 
+                <span class="nav-text">Profile</span>  
             </div>
             <div class="navbar-content-items">
                 <span class="material-symbols-outlined">pending</span>
-                More 
+                <span class="nav-text">More</span>  
             </div> 
-        </div>
+        </div> 
 
         <!-- TWEET BUTTON -->
         <div class="tweet-button">
@@ -69,8 +74,8 @@
         <!-- PROFILE -->
         <div class="profile"></div>
     </div>
-   
-    <!-- PROFILE -->
+
+    <!-- PROFILE --> 
     <div class="profile">
         <div class="profile-image">
             <img src="./assets/profile-pic.JPG" alt="">
@@ -85,11 +90,13 @@
             <span class="material-symbols-outlined">more_horiz</span>
         </div> 
         </div>
+
     </div>  
 
 
+
     <!-- MAINBODY CODE -->
-<main> 
+ <main> 
     <!-- HOME & STAR -->
     <div class="home">
         <span>Home</span>
@@ -106,35 +113,34 @@
      <div class="home-icons"> 
     <div class="home-icons-links"> 
            
-
         <div class="tooltip">  
-            <span class="material-symbols-outlined hover">gif_box</span> 
+            <span id="home-icon" class="material-symbols-outlined hover">gif_box</span> 
             <span class="tooltip-text">GIF</span>   
         </div>    
 
         <div class="tooltip">  
-            <span class="material-symbols-outlined hover">segment</span> 
+            <span id="home-icon" class="material-symbols-outlined hover">segment</span> 
             <span class="tooltip-text">Poll</span>   
         </div>   
 
         <div class="tooltip">  
-            <span class="material-symbols-outlined hover">sentiment_satisfied</span> 
+            <span id="home-icon" class="material-symbols-outlined hover">sentiment_satisfied</span> 
             <span class="tooltip-text">Emoji</span>   
         </div>   
 
         <div class="tooltip">  
-            <span class="material-symbols-outlined hover">today</span> 
+            <span id="home-icon" class="material-symbols-outlined hover">today</span> 
             <span class="tooltip-text">Schedule</span>   
         </div>   
 
         <div class="tooltip">  
-            <span class="material-symbols-outlined hover">person_pin_circle</span> 
+            <span id="home-icon" class="material-symbols-outlined hover">person_pin_circle</span> 
             <span class="tooltip-text">Location</span>   
         </div>   
         </div>  
         <button>Tweet</button>  
 </div> 
-
+ 
 <!-- SHOW * TWEETS -->
 <div class="show-tweets">
     <button type="button">Show 75 Tweets</button> 
@@ -146,9 +152,9 @@
     <div class="home-content">
         <div class="home-content-profile">
                 <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
+                    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F13%2F2015%2F04%2F05%2Ffeatured.jpg&q=60" alt="">
                 </div>
-        
+         
                 <div class="profile-username">
                     <span>J Molley</span>
                     <span>@JMolleyOfficial</span> 
@@ -164,35 +170,76 @@
         </div> 
         <div class="home-content-icons">
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span>  
                 <span class="tooltip-text">Reply</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
+            </div> 
+            <div class="tooltip">   
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
                 <span class="tooltip-text">Retweet</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
                 <span class="tooltip-text">Like</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
                 <span class="tooltip-text">Share</span>   
-            </div>  
+            </div>   
+        </div> 
+
+    </div>  
+
+    <!-- Tweet 2 -->
+    <div class="home-content">
+        <div class="home-content-profile">
+                <div class="profile-image">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div>
+        
+                <div class="profile-username">
+                    <span>Confused</span>
+                    <span>@areyoureally</span> 
+                </div>
+          
+                <div class="profile-more">
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div> 
+          </div>
+
+        <div class="home-content-tweet">
+            <span>Congradulations on reading this tweet. Aka thanks for being basic. </span>
+        </div> 
+        <div class="home-content-icons">
+            <div class="tooltip">  
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span> 
+                <span class="tooltip-text">Reply</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
+                <span class="tooltip-text">Retweet</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
+                <span class="tooltip-text">Like</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
+                <span class="tooltip-text">Share</span>   
+            </div>   
         </div>
 
     </div>  
 
-    <!-- Tweet 1 -->
+    <!-- Tweet 3-->
     <div class="home-content">
         <div class="home-content-profile">
                 <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
-                </div>
+                    <img src="https://icebreakerquestions.info/random-questions.jpg" alt="">
+                </div> 
         
                 <div class="profile-username">
-                    <span>J Molley</span>
-                    <span>@JMolleyOfficial</span> 
+                    <span>Random 1</span>
+                    <span>@re1</span> 
                 </div>
           
                 <div class="profile-more">
@@ -201,107 +248,25 @@
           </div>
 
         <div class="home-content-tweet">
-            <span>If you knew the risk I took to get paid you wouldn’t look at me the same.</span>
+            <span>I am legit. That's it, that's the whole tweet.</span>
         </div> 
         <div class="home-content-icons">
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span> 
                 <span class="tooltip-text">Reply</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
                 <span class="tooltip-text">Retweet</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
                 <span class="tooltip-text">Like</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
                 <span class="tooltip-text">Share</span>   
-            </div>  
-        </div>
-
-    </div>  
-
-    <!-- Tweet 2-->
-    <div class="home-content">
-        <div class="home-content-profile">
-                <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
-                </div>
-        
-                <div class="profile-username">
-                    <span>J Molley</span>
-                    <span>@JMolleyOfficial</span> 
-                </div>
-          
-                <div class="profile-more">
-                    <span class="material-symbols-outlined">more_horiz</span>
-                </div> 
-          </div>
-
-        <div class="home-content-tweet">
-            <span>If you knew the risk I took to get paid you wouldn’t look at me the same.</span>
-        </div> 
-        <div class="home-content-icons">
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
-                <span class="tooltip-text">Reply</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
-                <span class="tooltip-text">Retweet</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
-                <span class="tooltip-text">Like</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
-                <span class="tooltip-text">Share</span>   
-            </div>  
-        </div>
-
-    </div>  
-
-    <!-- Tweet 3 -->
-    <div class="home-content">
-        <div class="home-content-profile">
-                <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
-                </div>
-        
-                <div class="profile-username">
-                    <span>J Molley</span>
-                    <span>@JMolleyOfficial</span> 
-                </div>
-          
-                <div class="profile-more">
-                    <span class="material-symbols-outlined">more_horiz</span>
-                </div> 
-          </div>
-
-        <div class="home-content-tweet">
-            <span>If you knew the risk I took to get paid you wouldn’t look at me the same.</span>
-        </div> 
-        <div class="home-content-icons">
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
-                <span class="tooltip-text">Reply</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
-                <span class="tooltip-text">Retweet</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
-                <span class="tooltip-text">Like</span>   
-            </div>
-            <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
-                <span class="tooltip-text">Share</span>   
-            </div>  
+            </div>   
         </div>
 
     </div>  
@@ -310,12 +275,12 @@
     <div class="home-content">
         <div class="home-content-profile">
                 <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
+                    <img src="https://cdn.ponly.com/wp-content/uploads/Random-Thoughts-1024x683.jpg" alt="">
                 </div>
         
                 <div class="profile-username">
-                    <span>J Molley</span>
-                    <span>@JMolleyOfficial</span> 
+                    <span>Som G</span>
+                    <span>@somsom</span> 
                 </div>
           
                 <div class="profile-more">
@@ -324,39 +289,40 @@
           </div>
 
         <div class="home-content-tweet">
-            <span>If you knew the risk I took to get paid you wouldn’t look at me the same.</span>
-        </div> 
-        <div class="home-content-icons">
+            <span>Who looks at pixies and rainbow dusts and thinks "Hmmmm, this is a great human concept."?</span>
+        </div>  
+
+              <div class="home-content-icons">
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span> 
                 <span class="tooltip-text">Reply</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
                 <span class="tooltip-text">Retweet</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
                 <span class="tooltip-text">Like</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
                 <span class="tooltip-text">Share</span>   
-            </div>  
+            </div>   
         </div>
 
     </div>  
 
-    <!-- Tweet 5-->
+    <!-- Tweet 5 -->
     <div class="home-content">
         <div class="home-content-profile">
                 <div class="profile-image">
-                    <img src="./assets/profile-pic.JPG" alt="">
-                </div>
+                    <img src="data:image/jpeg;base64,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" alt="">
+                </div> 
         
                 <div class="profile-username">
-                    <span>J Molley</span>
-                    <span>@JMolleyOfficial</span> 
+                    <span>The Truth</span>
+                    <span>@youcanthandleit</span> 
                 </div>
           
                 <div class="profile-more">
@@ -365,25 +331,68 @@
           </div>
 
         <div class="home-content-tweet">
-            <span>If you knew the risk I took to get paid you wouldn’t look at me the same.</span>
+            <span>Pizza is overrated</span> 
         </div> 
-        <div class="home-content-icons">
+
+              <div class="home-content-icons">
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">contact_support</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span> 
                 <span class="tooltip-text">Reply</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">repeat</span> 
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
                 <span class="tooltip-text">Retweet</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">favorite</span> 
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
                 <span class="tooltip-text">Like</span>   
             </div>
             <div class="tooltip">  
-                <span class="material-symbols-outlined hover">file_upload</span> 
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
                 <span class="tooltip-text">Share</span>   
-            </div>  
+            </div>   
+        </div>
+
+    </div>  
+
+    <!-- Tweet 6-->
+    <div class="home-content">
+        <div class="home-content-profile">
+                <div class="profile-image">
+                    <img 
+                    src="data:image/jpeg;base64,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" alt="">
+                </div>
+        
+                <div class="profile-username">
+                    <span>firelord_fueges</span>
+                    <span>@firemoney</span> 
+                </div>
+           
+                <div class="profile-more">
+                    <span class="material-symbols-outlined">more_horiz</span>
+                </div> 
+          </div>
+
+        <div class="home-content-tweet">
+            <span>Damn, is this really how we be living now?</span> 
+        </div> 
+        <div class="home-content-icons"> 
+            <div class="tooltip">  
+                <span id="hover-blue" class="material-symbols-outlined hover">contact_support</span> 
+                <span class="tooltip-text">Reply</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-green" class="material-symbols-outlined hover">repeat</span> 
+                <span class="tooltip-text">Retweet</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-pink" class="material-symbols-outlined hover">favorite</span> 
+                <span class="tooltip-text">Like</span>   
+            </div>
+            <div class="tooltip">  
+                <span id="hover-blue" class="material-symbols-outlined hover">file_upload</span> 
+                <span class="tooltip-text">Share</span>   
+            </div>   
         </div>
 
     </div>   
@@ -654,8 +663,10 @@
                 <!-- INSERT CODE HERE  -->
             </div> 
             </div>
-        </div>  
+        </div>     
     
+
+
 </body> 
     
 </html>      
